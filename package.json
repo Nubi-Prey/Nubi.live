@@ -4,8 +4,14 @@
   "description": "Meu primeiro site",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next dev"
   },
   "author": "Nubi",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "next": "^15.0.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
 }
