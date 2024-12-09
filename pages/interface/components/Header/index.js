@@ -1,37 +1,24 @@
 import { Box } from "@primer/react"
 import Image from 'next/image'
 import logo from '/public/favicon.svg'
+import styles from './styles.module.css'
 
 function Header(){
 
     return (
-        <Box as='header'
-            sx={{
-                backgroundColor: '#202021',
-                borderBottomStyle: 'solid',
-                borderBottomColor: '#505060',
-                borderBottomWidth:'2px',
-                display:'flex',
-                height:'82px',
-                justifyContent:'space-around',
-                alignItems:'center'}
-            }>
+        <header className={styles.header}>
             
-            <Image src={logo} width='auto' height='50'/>
+            <Image src={logo} width='auto' className={styles.image}/>
 
-            <Box as='h1' sx={{color:'#e5e5e5'}}>
-                Programador TOP 1 do bairro
-            </Box>
+            <h1 className={styles.h1}>
+                Programador TOP 1<br/>do bairro
+            </h1>
 
-            <Box as='a' href="https://github.com/Nubi-Prey"
-                sx={{
-                    fontSize:'30px',
-                    color:'#ad9d9d'
-                }}>
+            <a className={styles.a} href="https://github.com/Nubi-Prey">
                 GitHub
-            </Box>
+            </a>
             
-        </Box>
+        </header>
     )
 }
 
