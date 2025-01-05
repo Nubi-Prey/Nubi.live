@@ -1,8 +1,8 @@
 .header{
     background-color: #181818;
     border-bottom-style: solid;
-    border-bottom-color: #505060;
-    border-bottom-width:2px;
+    border-bottom-color: #9f00ff;
+    border-bottom-width:3px;
     display: flex;
     height: 82px;
     justify-content: space-around;
@@ -15,7 +15,7 @@
 
 .image{
     height: auto;
-    width: 93px;
+    width: 74px;
 }
 
 .a{
@@ -29,7 +29,7 @@
     }
 
     .image{
-        width: 60px;
+        width: 40px;
     }
 
     .a{
@@ -43,7 +43,7 @@
     }
 
     .image{
-        width: 70px;
+        width: 50px;
     }
 
     .a{

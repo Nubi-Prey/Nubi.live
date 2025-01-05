@@ -3,6 +3,7 @@
     width: 100vw;
     height: 100vh;
     background-color: #1F1F1F;
+    overflow: auto;
 }
 
 .div{
@@ -12,14 +13,98 @@
     margin-top: 0;
 }
 
+.projetos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project_tittle{
+    margin: 30px;
+}
+
+.cards{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card_box{
+    display: flex;
+    background: #1c1c1c;
+    flex-direction: column;
+    align-items: center;
+    height: 550px;
+    width: 400px;
+    border: 3px solid #9f00ff;
+    border-radius: 5%;
+    
+}
+
+.logo{
+    height: 150px;
+    width: auto;
+    padding-top: 10%;
+}
+
+.project_desc{
+    width: 80%;
+    text-align: justify;
+}
+
+.btn_ver{
+    margin-top: 15%;
+    background:#9f00ff;
+    border: 3px solid #ff00aa;
+    border-radius: 1000px;
+    width: 40%;
+    height: 10%;
+    color:#ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
 @media only screen and (max-width: 375px){
     .main{
         font-size: 10px;
+    }
+
+    .cards{
+        font-size: 15px;
+        flex-direction: column;
+    }
+
+    .card_box{
+        width: 75%;
+        height: 400px;
+        margin-bottom: 15px;
+    }
+
+    .logo{
+        height: 100px;
     }
 }
 
 @media only screen and (min-width:376px) and (max-width: 620px){
     .main{
         font-size: 12px;
+    }
+
+    .cards{
+        font-size: 15px;
+        flex-direction: column;
+    }
+
+    .card_box{
+        width: 65%;
+        height: 400px;
+        margin-bottom: 15px;
+    }
+
+    .logo{
+        height: 100px;
     }
 }
