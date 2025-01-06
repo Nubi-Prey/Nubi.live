@@ -1,16 +1,9 @@
 .main{
-    font-size: 20px;
+    font-size: 30px;
     width: 100vw;
     height: 100vh;
     background-color: #1F1F1F;
     overflow: auto;
-}
-
-.div{
-    text-wrap: wrap;
-    padding-left: 10px;
-    padding-top: 10px;
-    margin-top: 0;
 }
 
 .projetos{
@@ -20,7 +13,10 @@
 }
 
 .project_tittle{
+    text-decoration-line: underline;
+    text-decoration-color: #9f00ff;
     margin: 30px;
+    font-size: 40px;
 }
 
 .cards{
@@ -32,79 +28,77 @@
 
 .card_box{
     display: flex;
-    background: #1c1c1c;
-    flex-direction: column;
     align-items: center;
-    height: 550px;
-    width: 400px;
+    flex-direction: column;
+    background: #1c1c1c;
     border: 3px solid #9f00ff;
     border-radius: 5%;
-    
+    height: 550px;
+    width: 400px;
+    margin: 10px;
+    font-size: 20px;
 }
 
 .logo{
+    padding-top: 10%;
     height: 150px;
     width: auto;
-    padding-top: 10%;
 }
 
 .project_desc{
-    width: 80%;
     text-align: justify;
+    width: 80%;
 }
 
 .btn_ver{
-    margin-top: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
     background:#9f00ff;
     border: 3px solid #ff00aa;
     border-radius: 1000px;
-    width: 40%;
+    margin-top: 15%;
     height: 10%;
-    color:#ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
+    width: 40%;
 }
 
-@media only screen and (max-width: 375px){
-    .main{
-        font-size: 10px;
-    }
-
+@media only screen and (max-width: 1200px){
     .cards{
-        font-size: 15px;
         flex-direction: column;
     }
 
     .card_box{
-        width: 75%;
-        height: 400px;
         margin-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 620px){
+    
+    .card_box{
+        height: 400px;
+        font-size: 15px;
     }
 
     .logo{
         height: 100px;
     }
+
 }
 
 @media only screen and (min-width:376px) and (max-width: 620px){
-    .main{
-        font-size: 12px;
-    }
-
-    .cards{
-        font-size: 15px;
-        flex-direction: column;
-    }
 
     .card_box{
         width: 65%;
-        height: 400px;
-        margin-bottom: 15px;
     }
 
-    .logo{
-        height: 100px;
+}
+
+
+@media only screen and (max-width: 375px){
+
+    .card_box{
+        width: 75%;
     }
+
 }
