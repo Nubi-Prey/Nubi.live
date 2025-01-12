@@ -1,0 +1,151 @@
+
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 70px;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    background: rgba(20,19,22,.5);
+    border-radius: 30px;
+    max-width: 1200px;
+    font-size: 20px;
+    height: 550px;
+    width: 90%;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    max-width: 95%;
+}
+
+.perfil{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 300px;
+    padding-inline: 40px;
+    border-right: 1px solid rgb(255, 255, 255);
+}
+
+.name{
+    font-size: 40px;
+}
+
+.insta{
+    height: 30px;
+    padding-right: 3px;
+}
+
+.mention{
+    display:flex;
+    
+    padding-top: 10px;
+}
+
+.info{
+    text-align: justify;
+    padding-inline: 40px;
+}
+
+.animation{
+    display:flex;
+    overflow: hidden;
+    max-width: 85%;
+}
+
+.cards{
+    display:flex;
+    animation: scrollx 15s linear infinite;
+}
+
+.icon{
+    padding: 15px;
+    height: 70px;
+    width: auto;
+}
+
+@keyframes scrollx{
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .section{
+        padding-top: 40px;
+    }
+
+    .top{
+        flex-direction: column;
+    }
+
+    .box{
+        height: auto;
+    }
+
+    .perfil{
+        border: none;
+        border-bottom: 1px solid white;
+        padding-inline: 0px;
+        width: 90%;
+        padding-block: 20px;
+        height: auto;
+    }
+
+    .info{
+        padding-top: 20px;
+    }
+
+    .animation{
+        padding-block: 30px;
+    }
+}
+
+@media only screen and (max-width: 620px){
+    .top{
+        font-size: 16px;
+    }
+
+    .info{
+        padding-inline: 10px;
+    }
+
+    .avatar{
+        height: 80px;
+        width: auto;
+    }
+    
+    .name{
+        font-size: 30px
+    }
+
+    .insta{
+        height: 21px;
+        width: auto;
+    }
+
+    .icon{
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 376px){
+    .info{
+        font-size: 14px;
+    }
+}
