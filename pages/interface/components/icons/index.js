@@ -63,5 +63,6 @@ const ReactLogo = ({className}) =>{
 
 
 
+export default ReactLogo
 
 export {InstaLogo, Css, Discord, Firebase, HtmlLogo, Javascript, Mongodb, NextJs, NodeJS, Postgresql, Python, ReactLogo}
