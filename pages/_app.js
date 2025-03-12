@@ -7,6 +7,7 @@ export default function MyApp({ Component, pageProps }) {
         <>
             <Head>
                 <link rel='shortcut icon' href='/favicon.svg'/>
+                <title>Nubi.Live</title>
             </Head>
             <Component {...pageProps}/>
         </>
