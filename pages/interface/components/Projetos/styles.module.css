@@ -17,9 +17,10 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    background: #1c1c1c;
+    background: rgba(20,19,22,.5);
     border: 3px solid #9f00ff;
-    border-radius: 5%;
+    border-radius: 30px;
+    box-shadow: black 0px 0px 5px;
     height: 550px;
     width: 400px;
     margin: 10px;

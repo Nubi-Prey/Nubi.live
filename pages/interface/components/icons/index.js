@@ -11,9 +11,14 @@ import nodejsSvg from 'public/images/icons/nodejs.svg'
 import postgresqlSvg from 'public/images/icons/postgresql.svg'
 import pythonSvg from 'public/images/icons/python.svg'
 import reactSvg from 'public/images/icons/react.svg'
+import githubSvg from 'public/images/icons/github.svg'
 
 const InstaLogo = ({className}) =>{
     return (<Image className={className} src={instasvg}/>)
+}
+
+const GithubLogo = ({className}) =>{
+    return (<Image className={className} src={githubSvg}/>)
 }
 
 const Css = ({className}) =>{
@@ -65,4 +70,4 @@ const ReactLogo = ({className}) =>{
 
 export default ReactLogo
 
-export {InstaLogo, Css, Discord, Firebase, HtmlLogo, Javascript, Mongodb, NextJs, NodeJS, Postgresql, Python, ReactLogo}
+export {InstaLogo, Css, Discord, Firebase, HtmlLogo, Javascript, Mongodb, NextJs, NodeJS, Postgresql, Python, ReactLogo, GithubLogo}

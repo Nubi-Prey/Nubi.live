@@ -2,7 +2,7 @@ import styles from './styles.module.css'
 import avatar from 'public/images/avatar.png'
 import localFont from 'next/font/local'
 import Image from 'next/image'
-import { InstaLogo, Css, Discord, Firebase, HtmlLogo, Javascript, Mongodb, NextJs, NodeJS, Postgresql, Python, ReactLogo } from '@/icons'
+import { InstaLogo, Css, Discord, Firebase, HtmlLogo, Javascript, Mongodb, NextJs, NodeJS, Postgresql, Python, ReactLogo, GithubLogo } from '@/icons'
 
 const integralcf = localFont({ src: '../../../../public/fonts/integralcf.otf'})
 
@@ -12,10 +12,10 @@ export default function AboutMe(){
             <div className={styles.box}>
                 <div className={styles.top}>
                     <div className={styles.perfil}>
-                        <Image className={styles.avatar} alt='avatar' src={avatar}/>
                         <span className={styles.name +' '+ integralcf.className}>MURILO</span>
-                        <div className={styles.mention}>
-                            <InstaLogo className={styles.insta}/> <span>@murilo_alves.sc</span>
+                        <div className={styles.mention_box}>
+                            <div className={styles.mention}><InstaLogo className={styles.mention_icon}/> <a className={styles.text}href='https://www.instagram.com/murilo_alves.sc/'>@murilo_alves.sc</a></div>
+                            <div className={styles.mention}><GithubLogo className={styles.mention_icon}/> <a className={styles.text} href='https://github.com/Nubi-Prey'>@Nubi-Prey</a></div>
                         </div>
                     </div>
                     <div className={styles.info}>
