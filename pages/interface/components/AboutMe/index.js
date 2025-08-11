@@ -19,7 +19,7 @@ export default function AboutMe(){
                         </div>
                     </div>
                     <div className={styles.info}>
-                        &emsp;Meu nome é Murilo, tenho 18 anos e 4 anos de experiência de programação como hobby. Sou um programador back-end com experiência nas linguagens Python e Javascript.<br/><br/>
+                        &emsp;Meu nome é Murilo, tenho 19 anos e 4 anos de experiência de programação como hobby. Sou um programador back-end com experiência nas linguagens Python e Javascript.<br/><br/>
                         &emsp;Tenho habilidades em NextJS, React, Node.js, Mongo DB, PostgreSQL, Firebase, REST APIs, Discord.JS / Discord.py e um pouco de Desenvolvimento WEB.<br/><br/>
                         &emsp;Além de minhas competências técnicas, estou sempre buscando aprender novas tecnologias e habilidades para me manter atualizado e competente.
                     </div>
