@@ -3,10 +3,17 @@ import avatar from 'public/images/avatar.png'
 import localFont from 'next/font/local'
 import Image from 'next/image'
 import { InstaLogo, Css, Discord, Firebase, HtmlLogo, Javascript, Mongodb, NextJs, NodeJS, Postgresql, Python, ReactLogo, GithubLogo } from '@/icons'
+import { getYearsSince } from '../../../../lib/date'
 
 const integralcf = localFont({ src: '../../../../public/fonts/integralcf.otf'})
 
+const BIRTH_DATE = new Date(2006, 6, 20, 0)
+const FIRST_COMMIT_DATE = new Date(2020, 7, 10, 0)
+
 export default function AboutMe(){
+    const age = getYearsSince(BIRTH_DATE)
+    const yearsOfExperience = getYearsSince(FIRST_COMMIT_DATE)
+
     return (
         <section className={styles.section}>
             <div className={styles.box}>
@@ -19,9 +26,9 @@ export default function AboutMe(){
                         </div>
                     </div>
                     <div className={styles.info}>
-                        &emsp;Meu nome é Murilo, tenho 19 anos e 4 anos de experiência de programação como hobby. Sou um programador back-end com experiência nas linguagens Python e Javascript.<br/><br/>
-                        &emsp;Tenho habilidades em NextJS, React, Node.js, Mongo DB, PostgreSQL, Firebase, REST APIs, Discord.JS / Discord.py e um pouco de Desenvolvimento WEB.<br/><br/>
-                        &emsp;Além de minhas competências técnicas, estou sempre buscando aprender novas tecnologias e habilidades para me manter atualizado e competente.
+                        &emsp;Meu nome é Murilo, sou um desenvolvedor back-end de {age} anos e {yearsOfExperience} anos de experiência de programação como hobby. Atuo nas linguagens Python, Javascript e Java.<br/><br/>
+                        &emsp;Tenho experiência em Desenvolvimento Web, Gerenciamento de Banco de Dados e Automaçoes para Discord.<br/><br/>
+                        &emsp;Além de minhas competências técnicas, estou sempre buscando aprender novas tecnologias e habilidades para me manter atualizado.
                     </div>
                 </div>
                 
