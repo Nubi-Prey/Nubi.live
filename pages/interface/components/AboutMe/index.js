@@ -1,5 +1,5 @@
 import styles from './styles.module.css'
-import avatar from 'public/images/avatar.png'
+import avatar from 'public/images/avatar.jpg'
 import localFont from 'next/font/local'
 import Image from 'next/image'
 import { InstaLogo, Css, Discord, Firebase, HtmlLogo, Javascript, Mongodb, NextJs, NodeJS, Postgresql, Python, ReactLogo, GithubLogo } from '@/icons'
@@ -19,6 +19,7 @@ export default function AboutMe(){
             <div className={styles.box}>
                 <div className={styles.top}>
                     <div className={styles.perfil}>
+                        <Image src={avatar} alt='Avatar' className={styles.avatar}/>
                         <span className={styles.name +' '+ integralcf.className}>MURILO</span>
                         <div className={styles.mention_box}>
                             <div className={styles.mention}><InstaLogo className={styles.mention_icon}/> <a className={styles.text}href='https://www.instagram.com/murilo_alves.sc/'>@murilo_alves.sc</a></div>
