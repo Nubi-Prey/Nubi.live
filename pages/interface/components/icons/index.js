@@ -14,55 +14,55 @@ import reactSvg from 'public/images/icons/react.svg'
 import githubSvg from 'public/images/icons/github.svg'
 
 const InstaLogo = ({className}) =>{
-    return (<Image className={className} src={instasvg}/>)
+    return (<Image alt='Instagram' className={className} src={instasvg}/>)
 }
 
 const GithubLogo = ({className}) =>{
-    return (<Image className={className} src={githubSvg}/>)
+    return (<Image alt='Github' className={className} src={githubSvg}/>)
 }
 
 const Css = ({className}) =>{
-    return (<Image className={className} src={cssSvg}/>)
+    return (<Image alt='CSS' className={className} src={cssSvg}/>)
 }
 
 const Discord = ({className}) =>{
-    return (<Image className={className} src={discordSvg}/>)
+    return (<Image alt='Discord' className={className} src={discordSvg}/>)
 }
 
 const Firebase = ({className}) =>{
-    return (<Image className={className} src={firebaseSvg}/>)
+    return (<Image alt='Firebase' className={className} src={firebaseSvg}/>)
 }
 
 const HtmlLogo = ({className}) =>{
-    return (<Image className={className} src={htmlSvg}/>)
+    return (<Image alt='HTML' className={className} src={htmlSvg}/>)
 }
 
 const Javascript = ({className}) =>{
-    return (<Image className={className} src={javascriptSvg}/>)
+    return (<Image alt='JavaScript' className={className} src={javascriptSvg}/>)
 }
 
 const Mongodb = ({className}) =>{
-    return (<Image className={className} src={mongodbSvg}/>)
+    return (<Image alt='MongoDB' className={className} src={mongodbSvg}/>)
 }
 
 const NextJs = ({className}) =>{
-    return (<Image className={className} src={nextjsSvg}/>)
+    return (<Image alt='Next.js' className={className} src={nextjsSvg}/>)
 }
 
 const NodeJS = ({className}) =>{
-    return (<Image className={className} src={nodejsSvg}/>)
+    return (<Image alt='Node.js' className={className} src={nodejsSvg}/>)
 }
 
 const Postgresql = ({className}) =>{
-    return (<Image className={className} src={postgresqlSvg}/>)
+    return (<Image alt='PostgreSQL' className={className} src={postgresqlSvg}/>)
 }
 
 const Python = ({className}) =>{
-    return (<Image className={className} src={pythonSvg}/>)
+    return (<Image alt='Python' className={className} src={pythonSvg}/>)
 }
 
 const ReactLogo = ({className}) =>{
-    return (<Image className={className} src={reactSvg}/>)
+    return (<Image alt='React' className={className} src={reactSvg}/>)
 }
 
 
