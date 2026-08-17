@@ -4,7 +4,7 @@ import styles from './styles.module.css'
 export default function ProjectCard({ logo, alt, title, description, visitLink, githubLink }){
     return (
         <div className={styles.card_box}>
-            <Image alt={alt} src={logo} className={styles.logo}/>
+            <Image alt={alt || title} src={logo} width={150} height={150} className={styles.logo}/>
             <h1>{title}</h1>
             <div className={styles.project_desc}>{description}</div>
             <div className={styles.btn_container}>
